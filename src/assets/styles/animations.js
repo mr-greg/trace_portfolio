@@ -1,4 +1,24 @@
 import { keyframes } from "styled-components";
+// import SplitType from 'split-type';
+// import { gsap } from 'gsap';
+
+// GSAP
+// Fonction pour animer le texte avec GSAP
+// export const animateText = (elementId) => {
+//   const myText = new SplitType(`#${elementId}`);
+
+//   // Utilisez GSAP pour animer l'élément
+//   gsap.from(`#${elementId}`, {
+//     opacity: 0,
+//     duration: 1,
+//     ease: 'power2.out',
+//   });
+
+//   // Retournez le composant styled avec l'animation keyframe
+//   return styled.div`
+//     animation: ${textAppear} 1s ease-out;
+//   `;
+// };
 
 export const btnAnim = keyframes`
   0% {

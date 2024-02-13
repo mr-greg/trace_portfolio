@@ -1,11 +1,27 @@
 import { createGlobalStyle } from "styled-components";
-import Roboto from "../fonts/Roboto-Regular.ttf";
+import Montserrat from "../fonts/Montserrat-var.ttf";
+import SuperFunky from "../fonts/SuperFunky.ttf";
+import Jalembe from "../fonts/Jalembe.ttf";
 
 export const GlobalFonts = createGlobalStyle`
 @font-face {
-  font-family: "Roboto";
-  src: url(${Roboto}) format("opentype");
-  font-weight: 900;
+  font-family: "Montserrat";
+  src: url(${Montserrat}) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "SuperFunky";
+  src: url(${SuperFunky}) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Jalembe";
+  src: url(${Jalembe}) format("truetype");
+  font-weight: normal;
   font-style: normal;
   font-display: swap;
 }

@@ -1,17 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --whiteColor: white;
+  --softWhiteColor: #efede6;
+  --orangeColor: #ff5500;
+  --pinkColor: #e588c4;
+  --blueColor: #3d96e0;
+  --yellowColor: #ffce00;
 }
 
 body {
-  color: rgba(255, 255, 255);
-  font-family: "Roboto";
-  background-color: #1a1625;
+  color: black;
+  font-family: 'Montserrat';
+  background-color: var(--softWhiteColor);
 
-  .button {
+  h1 {
+    font-size: 5vw; /* Responsive font size */
+    font-weight: 600;
+    margin-bottom: 1rem; /* Adjust margin for responsive layout */
+  }
+  h2 {
+    font-size: 2.5vw; /* Responsive font size */
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem; /* Adjust margin for responsive layout */
+  }
+  strong {
+    font-size: 1.2vw; /* Responsive font size */
+    font-weight: 600;
+  }
+  p {
+    font-size: 1.2vw; /* Responsive font size */
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 1rem; /* Adjust margin for responsive layout */
+  }
+
+  button {
+    color: white;
+    background-color: var(--orangeColor);
+    border: none;
+    font-size: 1vw; /* Responsive font size */
+    border-radius: 45px;
+    padding: 0.8rem 1.2rem; /* Adjust padding for responsive layout */
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    margin-bottom: 1rem; /* Adjust margin for responsive layout */
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+
+  a {
+    font-size: 1vw;
     transition: all 0.2s ease-in-out;
 
     &:hover {
-      background-color: #f2f2f2;
+      transform: scale(1.1);
+    }
+  }
+
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 4.5vw;
+    }
+    h2 {
+      font-size: 2.5vw;
+    }
+    strong,
+    p,
+    button {
+      font-size: 1.5vw;
     }
   }
 }

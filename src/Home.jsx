@@ -1,26 +1,25 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
-import styled from "styled-components";
-import Example from "./components/Example/Example";
+import React from 'react';
+import styled from 'styled-components';
+import Navbar from './components/Navbar/Navbar';
+import Hero from './components/Hero/Hero';
+import Resume from './components/Resume/Resume';
+import Logofolio from './components/Carousel/Carousel';
+import logoData from './data/data-logo.json';
+import socialData from './data/data-social-media.json';
 
 const StyledHome = styled.div`
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -150%);
-  h1 {
-    font-family: "Roboto";
-    text-align: center;
-  }
+  margin: 0 25px;
 `;
 
 function Home() {
   return (
     <StyledHome>
-      <h1>Hello World.</h1>
-      <Example />
+      <Navbar />
+      <Hero />
+      <Resume />
+      <Logofolio title="Logofolio." data={logoData} />
+      <Logofolio title="Social Media." data={socialData} />
     </StyledHome>
   );
 }
