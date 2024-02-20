@@ -28,10 +28,11 @@ const HorizontalScrollCarousel = ({ title, data }) => {
   const x = useTransform(scrollYProgress, [0, 1], ['1%', '-95%']);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh]">
+    // done
+    <section ref={targetRef} className="rh300">
       <h1>{title}</h1> {/* Use the title prop here */}
-      <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-4">
+      <div className="df-oh-ps">
+        <motion.div style={{ x }} className="df-g1r">
           {data.map((card) => {
             return <Card card={card} key={card.id} />;
           })}
@@ -46,11 +47,10 @@ HorizontalScrollCarousel.propTypes = {
   data: PropTypes.array.isRequired,
 };
 
+// eslint-disable-next-line react/prop-types
 const Card = ({ card }) => {
   return (
-    <div
-      key={card.id}
-      className="group relative h-[450px] w-[450px] overflow-hidden">
+    <div key={card.id} className="oh-pr-hw">
       <div
         style={{
           backgroundImage: `url(${card.url})`,
@@ -58,7 +58,7 @@ const Card = ({ card }) => {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
         }}
-        className="absolute inset-0 z-0 transition-transform duration-300 group-hover:scale-110"></div>
+        className="bordel"></div>
     </div>
   );
 };
