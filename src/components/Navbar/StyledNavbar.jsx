@@ -4,7 +4,7 @@ export const StyledNavbar = styled.header`
   font-family: 'Montserrat';
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding: 10px 80px;
   position: relative; /* Ensure proper stacking context */
 
