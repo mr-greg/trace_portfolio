@@ -4,6 +4,7 @@ import tracePicFull from '../../assets/img/trace-pic-full.png';
 export const StyledHero = styled.div`
   display: flex;
   padding: 50px 50px 0;
+  height: 100vh;
 
   .hero-pic {
     width: 30%;
@@ -12,6 +13,7 @@ export const StyledHero = styled.div`
 
     .trace-pic {
       width: 90%;
+      height: auto;
     }
 
     .pins {
@@ -20,20 +22,20 @@ export const StyledHero = styled.div`
       cursor: pointer;
     }
     .pin-dog {
-      top: 220px;
-      right: 15px;
+      top: 25%;
+      right: 5%;
     }
     .pin-camera {
-      top: -20px;
-      left: -30px;
+      top: -3%;
+      left: -5%;
     }
     .pin-whale {
-      bottom: 150px;
-      left: -30px;
+      bottom: 45%;
+      left: -5%;
     }
     .pin-cosmos {
-      bottom: -65px;
-      right: 80px;
+      bottom: 20%;
+      right: 20%;
     }
   }
 
@@ -87,13 +89,13 @@ export const StyledHero = styled.div`
     .contact-left {
       margin-right: 25%;
 
-      :first-child {
+      div {
         margin-bottom: 5px;
       }
     }
 
     .contact-right {
-      :first-child {
+      div {
         margin-bottom: 5px;
       }
     }

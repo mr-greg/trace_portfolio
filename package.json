@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.21.1",
     "sass": "^1.69.7",
+    "scroll-carousel-react": "^1.0.0",
     "split-type": "^0.3.4",
     "styled-components": "^6.1.8"
   },
