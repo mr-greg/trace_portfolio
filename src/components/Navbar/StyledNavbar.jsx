@@ -10,7 +10,7 @@ export const StyledNavbar = styled.header`
 
   .header-logo {
     .text-logo {
-      font-size: 48px;
+      font-size: 68px;
       text-decoration: none;
       color: black;
       font-weight: 600;
@@ -41,7 +41,7 @@ export const StyledNavbar = styled.header`
       text-decoration: none;
       color: black;
       font-weight: 400;
-      margin: 0 15px;
+      margin: 0 25px;
 
       &:hover {
         opacity: 0.7;

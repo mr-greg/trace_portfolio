@@ -9,17 +9,34 @@ import logoData from './data/data-logo.json';
 import socialData from './data/data-social-media.json';
 
 const StyledHome = styled.div`
-  margin: 0 25px;
+  padding: 0 25px;
+  .nav-hero-wrapper {
+    height: 100vh;
+  }
 `;
 
 function Home() {
   return (
     <StyledHome>
-      <Navbar />
-      <Hero />
+      <div className="nav-hero-wrapper">
+        <Navbar />
+        <Hero />
+      </div>
       {/* <Resume /> */}
-      <Logofolio title="Logofolio." data={logoData} dir="ltr" />
-      <Logofolio title="Social Media." data={socialData} dir="rtl" />
+      <div className="logo-wrapper">
+        <Logofolio
+          title="Logofolio."
+          data={logoData}
+          dir="ltr"
+          angle={'30deg'}
+        />
+      </div>
+      <Logofolio
+        title="Social Media."
+        data={socialData}
+        dir="rtl"
+        angle={'-30deg'}
+      />
     </StyledHome>
   );
 }

@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { StyledHero } from './StyledHero';
 import TracePic from '../../assets/img/trace-pic.png';
 import camera from '../../assets/img/camera.png';
@@ -16,7 +16,14 @@ import GsapMagnetic from '../../assets/styles/GsapMagnetic';
 import { motion } from 'framer-motion';
 
 function Hero() {
+  const [imageSize, setImageSize] = useState({ width: 0, height: 0 });
+  const firstImageRef = useRef(null);
+
   useEffect(() => {
+    if (firstImageRef.current) {
+      const { width, height } = firstImageRef.current.getBoundingClientRect();
+      setImageSize({ width, height });
+    }
     // eslint-disable-next-line no-unused-vars
     const titleReveal = new SplitType('#animate-text');
     gsap.to('.char', {
@@ -33,17 +40,28 @@ function Hero() {
       duration: 0.3,
       ease: 'power4.inOut',
     });
-  });
+  }, []);
 
   return (
     <StyledHero>
       <div className="hero-pic">
+        <img
+          src={TracePic}
+          alt="trace picture"
+          className="trace-pic"
+          ref={firstImageRef}
+        />
+
         <motion.img
           src={germanShepherd}
           alt="dog pin"
           className="pins pin-dog"
           drag
           dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          style={{
+            top: `${imageSize.height * 0.3}px`,
+            left: `${imageSize.width * 0.8}px`,
+          }}
         />
         <motion.img
           src={pinCamera}
@@ -51,6 +69,10 @@ function Hero() {
           className="pins pin-camera"
           drag
           dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          style={{
+            top: `${imageSize.height * -0.05}px`,
+            left: `${imageSize.width * -0.05}px`,
+          }}
         />
 
         <motion.img
@@ -59,6 +81,10 @@ function Hero() {
           className="pins pin-whale"
           drag
           dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          style={{
+            top: `${imageSize.height * 0.64}px`,
+            left: `${imageSize.width * 0.0}px`,
+          }}
         />
 
         <motion.img
@@ -67,9 +93,11 @@ function Hero() {
           className="pins pin-cosmos"
           drag
           dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+          style={{
+            top: `${imageSize.height * 0.95}px`,
+            left: `${imageSize.width * 0.6}px`,
+          }}
         />
-
-        <img src={TracePic} alt="trace picture" className="trace-pic" />
       </div>
 
       <div className="hero-text">

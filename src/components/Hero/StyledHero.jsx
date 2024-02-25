@@ -1,10 +1,10 @@
 import styled from 'styled-components';
 import tracePicFull from '../../assets/img/trace-pic-full.png';
+import TracePic from '../../assets/img/trace-pic.png';
 
 export const StyledHero = styled.div`
   display: flex;
   padding: 50px 50px 0;
-  height: 100vh;
 
   .hero-pic {
     width: 30%;
@@ -12,6 +12,7 @@ export const StyledHero = styled.div`
     z-index: 999;
 
     .trace-pic {
+      background-image: ${TracePic};
       width: 90%;
       height: auto;
     }
@@ -20,6 +21,7 @@ export const StyledHero = styled.div`
       position: absolute;
       width: 25%;
       cursor: pointer;
+      height: auto;
     }
     .pin-dog {
       top: 25%;
@@ -120,12 +122,12 @@ export const StyledHero = styled.div`
       }
     }
   }
-  @media only screen and (max-width: 1500px) {
+  /* @media only screen and (max-width: 1500px) {
     .trace-pic {
       content: url(${tracePicFull});
     }
     .pins {
       display: none;
     }
-  }
+  } */
 `;
