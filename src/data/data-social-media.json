@@ -1,42 +1,42 @@
 [
   {
-    "url": "./assets/img/socialMedia/1.PNG",
+    "url": "./src/assets/img/socialMedia/1.PNG",
     "id": 1
   },
   {
-    "url": "./assets/img/socialMedia/2.PNG",
+    "url": "./src/assets/img/socialMedia/2.PNG",
     "id": 2
   },
   {
-    "url": "./assets/img/socialMedia/3.PNG",
+    "url": "./src/assets/img/socialMedia/3.PNG",
     "id": 3
   },
   {
-    "url": "./assets/img/socialMedia/4.PNG",
+    "url": "./src/assets/img/socialMedia/4.PNG",
     "id": 4
   },
   {
-    "url": "./assets/img/socialMedia/5.PNG",
+    "url": "./src/assets/img/socialMedia/5.PNG",
     "id": 5
   },
   {
-    "url": "./assets/img/socialMedia/6.PNG",
+    "url": "./src/assets/img/socialMedia/6.PNG",
     "id": 6
   },
   {
-    "url": "./assets/img/socialMedia/7.PNG",
+    "url": "./src/assets/img/socialMedia/7.PNG",
     "id": 7
   },
   {
-    "url": "./assets/img/socialMedia/8.PNG",
+    "url": "./src/assets/img/socialMedia/8.PNG",
     "id": 8
   },
   {
-    "url": "./assets/img/socialMedia/9.PNG",
+    "url": "./src/assets/img/socialMedia/9.PNG",
     "id": 9
   },
   {
-    "url": "./assets/img/socialMedia/10.PNG",
+    "url": "./src/assets/img/socialMedia/10.PNG",
     "id": 10
   }
 ]
