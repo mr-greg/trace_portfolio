@@ -3,7 +3,7 @@ import ScrollCarousel from 'scroll-carousel-react';
 import { StyledCarousel } from './StyledCarousel';
 
 // eslint-disable-next-line react/prop-types
-const Logofolio = ({ title, data, dir }) => {
+const Carousel = ({ title, data, dir }) => {
   // Accept title and data as props
   return (
     <StyledCarousel>
@@ -31,4 +31,4 @@ const Logofolio = ({ title, data, dir }) => {
   );
 };
 
-export default Logofolio;
+export default Carousel;

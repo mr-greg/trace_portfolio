@@ -4,7 +4,6 @@ import { StyledHero } from './StyledHero';
 import TracePic from '../../assets/img/trace-pic.png';
 import camera from '../../assets/img/camera.png';
 import email from '../../assets/img/email.png';
-import instagram from '../../assets/img/instagram.png';
 import linkedin from '../../assets/img/linkedin.png';
 import germanShepherd from '../../assets/img/german-shepherd.png';
 import pinCamera from '../../assets/img/pin-camera.png';
@@ -168,26 +167,6 @@ function Hero() {
             </div>
             <div className="contact-right">
               <div className="insta contact-link">
-                <a
-                  href="https://www.instagram.com/letraece"
-                  target="_blank"
-                  rel="noreferrer">
-                  <GsapMagnetic>
-                    <img
-                      src={instagram}
-                      alt="instagram icon"
-                      className="contact-icon"
-                    />
-                  </GsapMagnetic>
-                </a>
-                <a
-                  href="https://www.instagram.com/letraece"
-                  target="_blank"
-                  rel="noreferrer">
-                  instagram.com/letraece
-                </a>
-              </div>
-              <div className="camera contact-link">
                 <a
                   href="https://www.instagram.com/laez.log/"
                   target="_blank"

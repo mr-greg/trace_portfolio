@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Navbar from './components/Navbar/Navbar';
 import Hero from './components/Hero/Hero';
 // import Resume from './components/Resume/Resume';
-import Logofolio from './components/Carousel/Carousel';
+import Carousel from './components/Carousel/Carousel';
 import logoData from './data/data-logo.json';
 import socialData from './data/data-social-media.json';
 
@@ -23,20 +23,10 @@ function Home() {
         <Hero />
       </div>
       {/* <Resume /> */}
-      <div className="logo-wrapper">
-        <Logofolio
-          title="Logofolio."
-          data={logoData}
-          dir="ltr"
-          angle={'30deg'}
-        />
-      </div>
-      <Logofolio
-        title="Social Media."
-        data={socialData}
-        dir="rtl"
-        angle={'-30deg'}
-      />
+      <Carousel title="Logofolio." data={logoData} dir="ltr" />
+      <Carousel title="Social Media." data={socialData} dir="rtl" />
+      <Carousel title="Banner Assets." data={logoData} dir="ltr" />
+      <Carousel title="Illustrations." data={logoData} dir="rtl" />
     </StyledHome>
   );
 }

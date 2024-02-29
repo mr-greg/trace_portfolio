@@ -1,27 +1,27 @@
 [
   {
-    "url": "./src/assets/img/logofolio/logo-data-day.png",
+    "url": "src/assets/img/logofolio/logo-data-day.png",
     "id": 1
   },
   {
-    "url": "./src/assets/img/logofolio/logo-sarah-skillet.png",
+    "url": "src/assets/img/logofolio/logo-sarah-skillet.png",
     "id": 2
   },
   {
-    "url": "./src/assets/img/logofolio/logo-hustler-hour.png",
+    "url": "src/assets/img/logofolio/logo-hustler-hour.png",
     "id": 3,
     "shadow": true
   },
   {
-    "url": "./src/assets/img/logofolio/logo-octo-versary.png",
+    "url": "src/assets/img/logofolio/logo-octo-versary.png",
     "id": 4
   },
   {
-    "url": "./src/assets/img/logofolio/logo-octo-mania.png",
+    "url": "src/assets/img/logofolio/logo-octo-mania.png",
     "id": 5
   },
   {
-    "url": "./src/assets/img/logofolio/logo-dmv.png",
+    "url": "src/assets/img/logofolio/logo-dmv.png",
     "id": 6
   }
 ]

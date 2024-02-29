@@ -52,6 +52,7 @@ export const StyledHero = styled.div`
     h1 {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
       line-height: 5.9rem;
+      padding-bottom: 10px;
     }
 
     .char {
@@ -76,8 +77,8 @@ export const StyledHero = styled.div`
     }
 
     .contact-icon {
-      width: 35px;
-      height: 35px;
+      width: 50px;
+      height: 50px;
     }
 
     h2 {
@@ -92,7 +93,7 @@ export const StyledHero = styled.div`
       margin-right: 25%;
 
       div {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
       }
     }
 
@@ -113,7 +114,7 @@ export const StyledHero = styled.div`
       a {
         text-decoration: none;
         color: black;
-        font-size: 18px;
+        font-size: 24px;
         font-weight: 600;
 
         &:hover {
